@@ -1,4 +1,4 @@
-# Breast cancer risk prediction using geneotyped data
+# Breast cancer risk prediction using genotyped data
 
 This repositroy provides the implementation source codes used in the mauscript entitled **Machine learning identifies interacting genetic variants contributing to breast cancer risk: A case study in Finnish cases and controls** to present results and discussion.
 
