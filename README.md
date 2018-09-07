@@ -29,4 +29,5 @@ sklearn           0.18.2
 
 **xgboost_optimization_2.py**: Gird search over n_estimators = [250, 300], max_depth = [2, 4, 6, 8] and learning_rate = [0.001, 0.01, 0.1].
 
-2- Adaptive iterative SNP selection (Algorithm 1 in the manuscript): Figure 1 shows a visual representation of the algorithm.
+2- Adaptive iterative SNP selection (Algorithm 1 in the manuscript): 
+![Figure 1 shows a visual representation of the algorithm.](Toy_algorithm1.png)
