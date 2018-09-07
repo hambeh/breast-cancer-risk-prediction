@@ -1,7 +1,7 @@
 # Updating...
 # Breast cancer risk prediction using genotyped data
 
-This repositroy provides the implementation source codes used in the mauscript entitled **[Machine learning identifies interacting genetic variants contributing to breast cancer risk: A case study in Finnish cases and controls](https://www.nature.com/articles/s41598-018-31573-5)** to present results and discussion.
+This repositroy provides the implementation source codes used in the mauscript entitled **[Machine learning identifies interacting genetic variants contributing to breast cancer risk: A case study in Finnish cases and controls](https://www.nature.com/articles/s41598-018-31573-5)** to present results and discussion. Due sensitivity of sample sets, implementation source codes in this repository use a randomly generated data with the same size and elements as the original sample sets. 
 
 ## Python requirements
 **Libraries**  **version**
@@ -20,3 +20,11 @@ pandas            0.19.2
 
 sklearn           0.18.2
 
+## Steps in running the source codes
+1- XGBoost optimization: These pythony codes can be run in parallel. 
+
+**xgboost_optimization_0.py**:  Gird search over n_estimators = [50, 100], max_depth = [2, 4, 6, 8] and learning_rate = [0.001, 0.01, 0.1].
+
+**xgboost_optimization_1.py**: Gird search over n_estimators = [150, 200], max_depth = [2, 4, 6, 8] and learning_rate = [0.001, 0.01, 0.1].
+
+**xgboost_optimization_2.py**: Gird search over n_estimators = [250, 300], max_depth = [2, 4, 6, 8] and learning_rate = [0.001, 0.01, 0.1].
