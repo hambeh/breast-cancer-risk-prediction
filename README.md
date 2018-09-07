@@ -34,4 +34,4 @@ sklearn           0.18.2
 
 ![Figure 1 shows a visual representation of the algorithm.](Toy_algorithm1.png)
 
-**3)** **report_results.py**: Computes mean average precision on the test, validation and training subsets using the interacting SNPs found by the second module.
+**3)** **report_results.py**: Computes mean average precisions on the test, validation and training subsets using the interacting SNPs found by the second module.
