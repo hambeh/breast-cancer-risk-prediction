@@ -9,6 +9,7 @@ from sklearn.metrics import auc
 from sklearn.model_selection import StratifiedKFold
 from sklearn.base import clone
 from sklearn.metrics import precision_recall_curve
+from sklearn import svm
 
 # fixing seed: important to have same random train and test split as the optimizing
 np.random.seed(0)
@@ -47,8 +48,9 @@ def cal_XGboost(X_train, Y_train, model, x_test, y_test):
     return model_XGboost.booster().get_score(importance_type='gain')
 
 def all_results_SVM(XX_train,YY_train,XX_validation,YY_validation,indices,model):
-    classifier = clone(model)
+#    classifier = clone(model)
 #    print(model)
+    classifier = svm.SVC(probability=True, random_state=3, kernel='linear', C=1.5, class_weight='balanced')
     classifier.fit(XX_train[:,indices], YY_train)
     ts_score = classifier.predict_proba(XX_validation[:,indices])
     precision, recall, _ = precision_recall_curve(YY_validation, ts_score[:,1])
